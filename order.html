@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Mojogloves | Learn to touch-type fast!</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h2>LOGO</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="how-they-work.html">HOW THEY WORK</a></li>
+            <li>
+              <a href="order.html" class="selected">ORDER NOW</a>
+            </li>
+            <li>
+              <a href="order.html#reviews">CUSTOMER REVIEWS</a>
+            </li>
+            <li>
+              <a href="index.html#contact">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="pop-menu" tabindex="0">
+          <div class="line"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="sub-page-showcase order-showcase">
+        <div class="container">
+          <h3 class="sub-text">Start touch-typing today</h3>
+          <h1 class="sub-page-heading">Order now</h1>
+          <div class="product-grid">
+            <div class="product-carousel">
+              <i
+                class="fas fa-angle-double-left prev arrows"
+                id="prev-product"
+              ></i>
+
+              <img
+                src="imgs/showcase.jpg"
+                alt="typing on laptop with mojogloves on"
+                id="product-img"
+              />
+
+              <i
+                class="fas fa-angle-double-right next arrows"
+                id="next-product"
+              ></i>
+              <div class="carousel-circs no-pad">
+                <i class="fas fa-circle" id="circ1"></i>
+                <i class="far fa-circle" id="circ2"></i>
+                <i class="far fa-circle" id="circ3"></i>
+                <i class="far fa-circle" id="circ4"></i>
+              </div>
+            </div>
+            <div class="product-info">
+              <h2>Mojo Gloves and teaching aid</h2>
+              <h3>$25.00</h3>
+              <span>/ includes mojogloves and teaching aid</span>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Corrupti dolorum labore minima ipsam eos. Quod officia corrupti
+                tempora voluptatem ipsa magni autem doloremque nostrum facilis,
+                dolore aspernatur sint quisquam dolores dolor ab. Unde,
+                necessitatibus accusantium!
+              </p>
+              <h3>Shipping</h3>
+              <span class="shipping-cost">$4.99</span>
+              <span>/ New Zealand wide shipping</span>
+              <hr />
+              <button class="btns accent-bg" id="order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <button class="btns review-modal accent-bg" id="review-modal-btn">
+          Share your story
+          <i class="fas fa-share"></i>
+        </button>
+        <div class="container">
+          <h2>Customer Reviews</h2>
+          <hr class="review-hr" />
+          <div class="full-review">
+            <div class="stars">
+              <i class="fas fa-star gold"></i>
+              <i class="fas fa-star gold"></i>
+              <i class="fas fa-star gold"></i>
+              <i class="fas fa-star gold"></i>
+              <i class="fas fa-star gold"></i>
+            </div>
+            <h3 class="review-name">John Doe</h3>
+            <span class="review-location">Auckland, New Zealand</span>
+            <p class="review-p">
+              Within two weeks of purchasing the Mojo Gloves and learning aid, I
+              saw drastic improvements in my typing speed. Being a web
+              development student, I am typing for long periods of time most
+              days of the week. By increasing my typing speed I am able to get
+              work done much faster. Would highly recommend this product to any
+              looking to boost there typing speed.
+            </p>
+          </div>
+          <hr class="review-hr" />
+          <div class="full-review">
+            <div class="stars">
+              <i class="fas fa-star gold"></i>
+              <i class="fas fa-star gold"></i>
+              <i class="fas fa-star gold"></i>
+              <i class="fas fa-star gold"></i>
+              <i class="fas fa-star gold"></i>
+            </div>
+            <h3 class="review-name">Sarah Jones</h3>
+            <span class="review-location">Tauranga, New Zealand</span>
+            <p class="review-p">
+              Within two weeks of purchasing the Mojo Gloves and learning aid, I
+              saw drastic improvements in my typing speed. Being a web
+              development student, I am typing for long periods of time most
+              days of the week. By increasing my typing speed I am able to get
+              work done much faster. Would highly recommend this product to any
+              looking to boost there typing speed.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <h2>LOGO</h2>
+        <ul class="footer-nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="how-they-work.html">HOW THEY WORK</a></li>
+          <li><a href="order.html">ORDER NOW</a></li>
+          <li><a href="order.html#reviews">CUSTOMER REVIEWS</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+
+        <a href="mailto:sales@mojogloves.co.nz" class="mail">
+          <i class="far fa-paper-plane social"></i>
+          sales@mojogloves.co.nz
+        </a>
+        <a
+          href="https://www.facebook.com/Teach-yourself-touch-typing-with-MojoGloves-109823190705692/?view_public_for=109823190705692&ref=page_internal"
+          class="social"
+          target="_blank"
+        >
+          <i class="fab fa-facebook social"></i>
+        </a>
+        <a href="#" class="social"><i class="fab fa-instagram social"></i></a>
+        <hr />
+        <div class="lower-footer">
+          <p class="copy">
+            &copy; Mojo Gloves Limited 2020, All Rights Reserved
+          </p>
+          <p class="site-by">Site by Pine</p>
+        </div>
+      </div>
+    </footer>
+    <!-- -----------------------------------------------------------Hidden elements--------------------------- -->
+    <div class="side-nav">
+      <a href="#" id="close-btn">&times;</a>
+      <ul id="side-list">
+        <li><a href="index.html" class="nav-item">HOME</a></li>
+        <li><a href="how-they-work.html" class="nav-item">HOW THEY WORK</a></li>
+        <li>
+          <a href="order.html" class="nav-item">ORDER NOW</a>
+        </li>
+        <li>
+          <a href="order.html#reviews" class="nav-item">CUSTOMER REVIEWS</a>
+        </li>
+        <li>
+          <a href="index.html#contact" class="nav-item">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-overlay" id="order-modal">
+      <div class="modal">
+        <div class="container">
+          <span class="close" id="closeOrder">&times;</span>
+          <h2>LOGO</h2>
+          <p>
+            Please fill out the form below to place an order. Once we have
+            received your order we will send out payment instructions
+          </p>
+
+          <form class="index-form" netlify>
+            <label>
+              Full Name*
+              <input type="text" placeholder="Enter full name" />
+            </label>
+            <label>
+              Quantity*
+              <input type="number" placeholder="Enter quantity " />
+            </label>
+            <label>
+              Email*
+              <input type="email" placeholder="Enter email" />
+            </label>
+            <label>
+              Message
+              <textarea></textarea>
+            </label>
+            <button class="btns accent-bg">Order Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay" id="review-modal">
+      <div class="modal">
+        <div class="container">
+          <span class="close" id="review-close">&times;</span>
+          <h2>LOGO</h2>
+          <p>Leave us a review!</p>
+          <form class="index-form" netlify>
+            <label>
+              Full Name*
+              <input type="text" />
+            </label>
+            <label>
+              Rating
+              <select>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </label>
+            <label>
+              Country*
+              <input type="text" />
+            </label>
+            <label>
+              Review*
+              <textarea></textarea>
+            </label>
+            <button class="btns accent-bg">Submit</button>
+          </form>
+        </div>
+      </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="src/app.js"></script>
+      <script src="src/order.js"></script>
+    </div>
+  </body>
+</html>
