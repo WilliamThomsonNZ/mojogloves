@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>Mojogloves | Learn to touch-type fast!</title>
+    <title>Order Now | Mojogloves</title>
   </head>
   <body>
     <header>
@@ -199,7 +199,7 @@
             received your order we will send out payment instructions
           </p>
 
-          <form class="index-form" netlify>
+          <form class="index-form" name="order" method="POST" netlify>
             <label>
               Full Name*
               <input type="text" placeholder="Enter full name" />
@@ -227,7 +227,7 @@
           <span class="close" id="review-close">&times;</span>
           <h2>LOGO</h2>
           <p>Leave us a review!</p>
-          <form class="index-form" netlify>
+          <form class="index-form" netlify name="review" method="POST">
             <label>
               Full Name*
               <input type="text" />
@@ -244,7 +244,7 @@
               </select>
             </label>
             <label>
-              Country*
+              City*
               <input type="text" />
             </label>
             <label>
