@@ -1460,15 +1460,19 @@
           <form name="contact" method="POST" netlify>
             <label>
               Full name*
-              <input type="text" placeholder="Enter full name" />
+              <input type="text" placeholder="Enter full name" name="name" />
             </label>
             <label>
               Email*
-              <input type="email" placeholder="Enter email address" />
+              <input
+                type="email"
+                placeholder="Enter email address"
+                name="email"
+              />
             </label>
             <label>
               Message*
-              <textarea></textarea>
+              <textarea name="message"></textarea>
             </label>
             <input type="submit" class="accent-bg btns" />
           </form>
@@ -1503,7 +1507,7 @@
           <p class="copy">
             &copy; Mojo Gloves Limited 2020, All Rights Reserved
           </p>
-          <p class="site-by">Site by Pine</p>
+          <p class="site-by">Site by WT</p>
         </div>
       </div>
     </footer>

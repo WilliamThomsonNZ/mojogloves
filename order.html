@@ -168,7 +168,7 @@
           <p class="copy">
             &copy; Mojo Gloves Limited 2020, All Rights Reserved
           </p>
-          <p class="site-by">Site by Pine</p>
+          <p class="site-by">Site by WT</p>
         </div>
       </div>
     </footer>
@@ -202,19 +202,23 @@
           <form class="index-form" name="order" method="POST" netlify>
             <label>
               Full Name*
-              <input type="text" placeholder="Enter full name" />
+              <input type="text" placeholder="Enter full name" name="name" />
             </label>
             <label>
               Quantity*
-              <input type="number" placeholder="Enter quantity " />
+              <input
+                type="number"
+                placeholder="Enter quantity"
+                name="quantity"
+              />
             </label>
             <label>
               Email*
-              <input type="email" placeholder="Enter email" />
+              <input type="email" placeholder="Enter email" name="email" />
             </label>
             <label>
               Message
-              <textarea></textarea>
+              <textarea name="message"></textarea>
             </label>
             <button class="btns accent-bg">Order Now</button>
           </form>
@@ -230,11 +234,11 @@
           <form class="index-form" netlify name="review" method="POST">
             <label>
               Full Name*
-              <input type="text" />
+              <input type="text" name="name" />
             </label>
             <label>
               Rating
-              <select>
+              <select name="rating">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -245,11 +249,11 @@
             </label>
             <label>
               City*
-              <input type="text" />
+              <input type="text" name="city" />
             </label>
             <label>
               Review*
-              <textarea></textarea>
+              <textarea name="message"></textarea>
             </label>
             <button class="btns accent-bg">Submit</button>
           </form>
