@@ -1457,7 +1457,7 @@
             Fill out the form below or email us directly at
             <a href="#">sales@mojogloves.co.nz</a>
           </p>
-          <form name="contact" method="POST" netlify>
+          <form name="contact" method="POST" id="contact-form">
             <label>
               Full name*
               <input type="text" placeholder="Enter full name" name="name" />
@@ -1474,7 +1474,7 @@
               Message*
               <textarea name="message"></textarea>
             </label>
-            <input type="submit" class="accent-bg btns" />
+            <button class="accent-bg btns" id="contactBtn">Submit</button>
           </form>
         </div>
       </section>
@@ -1530,6 +1530,17 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="src/app.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_8lhkks9Hk10GylyFDHWmG");
+      })();
+    </script>
     <script src="src/index.js"></script>
+    <script type="text/javascript"></script>
   </body>
 </html>

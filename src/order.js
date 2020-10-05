@@ -98,3 +98,31 @@ window.addEventListener("scroll", () => {
   modal.classList.toggle("sticky-modal", window.scrollY > 330);
   reviews.classList.toggle("review-padding", window.scrollY > 330);
 });
+
+document.getElementById("ratingForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  (async () => {
+    const form = document.getElementById("ratingBtn");
+    form.innerHTML = "<img src='imgs/loading3.svg'/>";
+    await emailjs.sendForm("mojogloves", "ReviewForm", "#ratingForm");
+    form.innerHTML = "&#10003;";
+    setTimeout(() => {
+      form.innerHTML = "Submit";
+    }, 2500);
+  })();
+  e.target.reset();
+});
+
+document.getElementById("orderForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+  (async () => {
+    const form = document.getElementById("orderBtn");
+    form.innerHTML = "<img src='imgs/loading3.svg'/>";
+    await emailjs.sendForm("mojogloves", "OrderForm", "#orderForm");
+    form.innerHTML = "&#10003;";
+    setTimeout(() => {
+      form.innerHTML = "Order Now";
+    }, 2500);
+  })();
+  event.target.reset();
+});

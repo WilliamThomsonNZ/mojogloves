@@ -199,7 +199,7 @@
             received your order we will send out payment instructions
           </p>
 
-          <form class="index-form" name="order" method="POST" netlify>
+          <form class="index-form" name="order" method="POST" id="orderForm">
             <label>
               Full Name*
               <input type="text" placeholder="Enter full name" name="name" />
@@ -220,7 +220,10 @@
               Message
               <textarea name="message"></textarea>
             </label>
-            <button class="btns accent-bg">Order Now</button>
+            <button class="btns accent-bg" id="orderBtn">Order Now</button>
+            <h3 class="submit-complete" id="orderComplete">
+              Thank you for your order!
+            </h3>
           </form>
         </div>
       </div>
@@ -231,7 +234,7 @@
           <span class="close" id="review-close">&times;</span>
           <h2>LOGO</h2>
           <p>Leave us a review!</p>
-          <form class="index-form" netlify name="review" method="POST">
+          <form class="index-form" name="review" method="POST" id="ratingForm">
             <label>
               Full Name*
               <input type="text" name="name" />
@@ -255,13 +258,26 @@
               Review*
               <textarea name="message"></textarea>
             </label>
-            <button class="btns accent-bg">Submit</button>
+            <button class="btns accent-bg" id="ratingBtn">Submit</button>
+
+            <h3 class="submit-complete" id="reviewComplete">
+              Thank you for your review!
+            </h3>
           </form>
         </div>
       </div>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="src/app.js"></script>
       <script src="src/order.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("user_8lhkks9Hk10GylyFDHWmG");
+        })();
+      </script>
     </div>
   </body>
 </html>

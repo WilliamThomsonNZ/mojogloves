@@ -955,6 +955,16 @@ footer hr {
   animation-name: animatetop;
   animation-duration: 0.5s;
 }
+.submit-complete {
+  background-color: var(--accent);
+  padding: 1rem 2rem;
+  color: #fff;
+  display: none;
+  margin-left: 1rem;
+  font-weight: normal;
+  border-radius: 3px;
+}
+
 .modal h2 {
   text-align: center;
   margin-bottom: 1rem;

@@ -99,3 +99,23 @@ next.addEventListener("click", () => {
 //   closeBtn.style.display = "none";
 //   sideList.style.opacity = "0";
 // });
+
+document.getElementById("contact-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  (async () => {
+    const form = document.getElementById("contactBtn");
+    form.innerHTML = "<img src='imgs/loading3.svg'/>";
+    await emailjs.sendForm("mojogloves", "ContactForm", "#contact-form");
+    form.innerHTML = "&#10003;";
+    setTimeout(() => {
+      form.innerHTML = "Submit";
+    }, 2500);
+  })()
+    .then((result) => {
+      console.log(result);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  event.target.reset();
+});
