@@ -5,6 +5,7 @@
   --grytxt: #bebebe;
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @font-face {
   font-family: blacksans;
   src: url(blacksans.otf);
@@ -36,6 +37,21 @@ header {
   left: 0;
   background: #fff;
   z-index: 1000;
+}
+
+.header-logo {
+  height: 90%;
+  width: auto;
+}
+
+.footer-logo {
+  height: auto;
+  width: 40%;
+  margin-bottom: 2rem;
+}
+.modal-logo {
+  width: 40%;
+  margin: 0 30% 1rem 30%;
 }
 .sticky {
   box-shadow: 2px 0 5px grey;
@@ -197,7 +213,15 @@ nav a:hover:after {
   transition: all 0.2s ease;
 }
 /* -------------------------------------------------------------Global Footer-------------------------------------------- */
-
+.wtLogo {
+  font-family: "Pacifico", cursive;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.wtLogo:hover {
+  color: #20234b;
+}
 footer {
   height: auto;
 
@@ -253,7 +277,7 @@ footer hr {
   padding: 1rem 0 3rem 0;
   position: relative;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
 }
@@ -265,7 +289,6 @@ footer hr {
 .site-by {
   position: absolute;
   right: 0;
-  text-decoration: underline;
 }
 
 /* ------------------------------------------------------------landing-styles---------------------------------------------------- */
