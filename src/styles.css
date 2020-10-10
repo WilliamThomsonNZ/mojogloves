@@ -65,6 +65,9 @@ header {
   align-items: center;
   position: relative;
 }
+.header-container a {
+  height: 100%;
+}
 nav {
   position: absolute;
   right: 0;
