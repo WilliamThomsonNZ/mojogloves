@@ -9,7 +9,9 @@ const name = document.getElementById("testimonial-name"),
   paragraph = document.getElementById("testimonial-paragraph"),
   testimonialBox = document.getElementById("test-info"),
   circ1 = document.getElementById("circ1"),
-  circ2 = document.getElementById("circ2");
+  circ2 = document.getElementById("circ2"),
+  videoBtn = document.getElementById("videoBtn"),
+  videoModal = document.getElementById("video-modal");
 
 const testimonialCircs = [circ1, circ2];
 
@@ -119,3 +121,15 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
     });
   event.target.reset();
 });
+
+const showVideo = () => {
+  videoModal.style.display = "flex";
+};
+
+const hideModal = (e) => {
+  if (!e.target.classList.contains("video-container")) {
+    videoModal.style.display = "none";
+  }
+};
+videoModal.addEventListener("click", hideModal);
+videoBtn.addEventListener("click", showVideo);

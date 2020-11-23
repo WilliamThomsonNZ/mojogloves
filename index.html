@@ -53,6 +53,7 @@
             class="container showcase-container"
             data-aos="fade-up"
             data-aos-duration="1000"
+            data-aos-delay="300"
             data-aos-anchor-placement="center-bottom"
           >
             <h1>Teach yourself to touch-type fast!</h1>
@@ -64,14 +65,11 @@
             <div class="showcase-btns">
               <button
                 class="accent-bg btns"
-                onclick="location.href = 'order.html'"
+                onclick="location.href = 'how-they-work.html'"
               >
                 Order Now
               </button>
-              <button
-                class="btns"
-                onclick="location.href = 'how-they-work.html'"
-              >
+              <button class="btns" id="videoBtn">
                 Watch Video
                 <i class="fas fa-play play"></i>
               </button>
@@ -87,7 +85,9 @@
             class="card"
             class="card"
             data-aos="fade-up"
-            data-aos-duration="500"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-once="true"
           >
             <div class="inner-card-container">
               <svg
@@ -800,6 +800,8 @@
             class="card"
             data-aos="fade-up"
             data-aos-duration="1000"
+            data-aos-delay="400"
+            data-aos-once="true"
           >
             <div class="inner-card-container">
               <svg
@@ -1042,7 +1044,13 @@
               </p>
             </div>
           </div>
-          <div class="card" data-aos="fade-up" data-aos-duration="1500">
+          <div
+            class="card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-once="true"
+          >
             <div class="inner-card-container">
               <svg
                 id="2b8e3008-3352-469a-8231-8c916447ef06"
@@ -1526,7 +1534,18 @@
         </div>
       </div>
     </footer>
-
+    <div id="video-modal">
+      <div class="video-container">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/RhB4AQ80TDA"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
     <div class="side-nav">
       <a href="#" id="close-btn">&times;</a>
       <ul id="side-list">
@@ -1556,6 +1575,5 @@
       })();
     </script>
     <script src="src/index.js"></script>
-    <script type="text/javascript"></script>
   </body>
 </html>

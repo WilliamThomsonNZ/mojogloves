@@ -723,7 +723,8 @@ footer hr {
   color: #fff;
 }
 .guide {
-  margin: 10rem 0;
+  padding: 0 0 10rem 0;
+  background-color: var(--grybg);
 }
 
 .guide-grid {
@@ -840,8 +841,23 @@ footer hr {
   z-index: -1;
 } */
 
+.htw-bg {
+  background-color: var(--grybg);
+}
 /* ----------------------------------------------------order------------------------------------- */
 
+.prices li {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.prices li:first-child {
+  margin: 0 0 0.5rem 0;
+}
+
+.prices {
+  margin-bottom: 1rem;
+}
 .order-showcase {
   padding-top: 10rem;
 }
@@ -880,7 +896,7 @@ footer hr {
 }
 
 .product-info h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 .product-info p {
@@ -889,7 +905,7 @@ footer hr {
 
 .shipping-cost {
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: inline-block;
 }
 .product-info hr {
@@ -1030,6 +1046,24 @@ footer hr {
   left: 0;
   z-index: 99999;
 }
+#video-modal {
+  background: rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container {
+  width: 40%;
+  height: 60%;
+  border-radius: 5px;
+}
 
 @keyframes animatetop {
   from {
@@ -1125,10 +1159,16 @@ footer hr {
 }
 
 @media (max-width: 500px) {
+  .video-container {
+    width: 80%;
+  }
   .htw-content-container {
     display: block;
     margin-left: 0;
     width: 100%;
+  }
+  .sub-page-showcase {
+    padding-bottom: 5rem;
   }
   .htw-content {
     margin-left: 0;
