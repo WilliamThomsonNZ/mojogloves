@@ -122,10 +122,13 @@ const showVideo = () => {
   videoModal.style.display = "flex";
 };
 
+const iframe = document.getElementById("indexVideo");
 const hideModal = (e) => {
   if (!e.target.classList.contains("video-container")) {
     videoModal.style.display = "none";
   }
+  const iframeSrc = iframe.src;
+  iframe.src = iframeSrc;
 };
 videoModal.addEventListener("click", hideModal);
 videoBtn.addEventListener("click", showVideo);
