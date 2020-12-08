@@ -508,7 +508,7 @@ footer hr {
 
 #testimonial-name {
   font-weight: normal;
-  margin-top: 1rem;
+  padding-top: 1.75rem;
 }
 
 #testimonial-location {
@@ -537,12 +537,6 @@ footer hr {
   position: absolute;
   color: var(--grytxt);
   bottom: 0;
-}
-#avatar {
-  width: 100px;
-  height: auto;
-  border-radius: 50%;
-  margin-top: -2rem;
 }
 
 .prev {

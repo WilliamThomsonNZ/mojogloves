@@ -5,7 +5,6 @@ const next = document.getElementById("next-test");
 //DOM elements
 const name = document.getElementById("testimonial-name"),
   locations = document.getElementById("testimonial-location"),
-  avatar = document.getElementById("testimonial-avatar"),
   paragraph = document.getElementById("testimonial-paragraph"),
   testimonialBox = document.getElementById("test-info"),
   circ1 = document.getElementById("circ1"),
@@ -17,19 +16,17 @@ const testimonialCircs = [circ1, circ2];
 
 const testimonials = [
   {
-    name: "William Thomson",
-    location: "Tauranga, New Zealand",
-    avartar: "imgs/testimonials/WT.jpg",
+    name: "Tira",
+    location: "Taupo, New Zealand",
     p:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit.Architecto aspernatur eligendi temporibus, adipisci doloresaliquid aut sed maxime. Voluptas laborum tempore cupiditate",
+      " When Megan first showed me her mojogloves I thought Wow, they look really cool. I bought them straight away for my 9 year old son to help him with his typing & school work on his chromebook :) After practising with the gloves he feels way more confident typing without looking at the keyboard as much now. Thanks Megan - well designed product and great for kids!",
   },
-  {
-    name: "John Doe",
-    location: "Auckland, New Zealand",
-    avartar: "imgs/testimonials/WT",
-    p:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit.Architecto aspernatur eligendi temporibus, adipisci doloresaliquid aut sed maxime. Voluptas laborum tempore cupiditate",
-  },
+  // {
+  //   name: "John Doe",
+  //   location: "Auckland, New Zealand",
+  //   p:
+  //     " Lorem ipsum dolor sit amet, consectetur adipisicing elit.Architecto aspernatur eligendi temporibus, adipisci doloresaliquid aut sed maxime. Voluptas laborum tempore cupiditate",
+  // },
 ];
 
 const clearCirc = () => {
@@ -46,8 +43,7 @@ let count = 0;
 const updateTestimonial = () => {
   name.textContent = testimonials[count].name;
   locations.textContent = testimonials[count].location;
-  avatar.src = testimonials[count].avatar;
-  paragraph.textContent = testimonials[count].paragraph;
+  paragraph.textContent = testimonials[count].p;
 };
 const fade = () => {
   testimonialBox.style.opacity = 0;
