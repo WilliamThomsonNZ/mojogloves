@@ -1,19 +1,19 @@
 // //Product image carousel
 const productImgs = [
   {
-    img: "../imgs/showcase.jpg",
+    img: "imgs/showcase.jpg",
     alt: "typing on laptop with mojogloves on",
   },
   {
-    img: "../imgs/product2.jpg",
+    img: "imgs/product2.jpg",
     alt: "mojogloves and teaching aid",
   },
   {
-    img: "../imgs/step3.jpg",
+    img: "imgs/step3.jpg",
     alt: "typing with mojogloves and teaching aid",
   },
   {
-    img: "../imgs/step2.jpg",
+    img: "imgs/step2.jpg",
     alt: "laptop with teaching aid on the screen",
   },
 ];
